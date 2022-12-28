@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <meta charset="utf-8">
+    </head>
+
+    <body>
+        <script>
+			var ref = document.referrer;
+			if (ref.indexOf("ctfile.net") > -1)
+			{
+				window.location.href= "http://www.ctfile.net/premium.php?l=3&ref=" + escape(ref);
+			}
+			else if (ref.indexOf("pipipan.com") > -1)
+			{
+				window.location.href= "https://www.pipipan.com/premium.php?l=3&ref=" + escape(ref);
+			}
+			else
+			{
+				window.location.href= "https://www.ctfile.com/premium.php?l=3&ref=" + escape(ref);
+			}
+        </script>
+    </body>
+
+</html>
